@@ -1,11 +1,11 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author xiaohong
+ * @author darryring
  **/
 public class IOStreamUtil {
 

@@ -1,4 +1,4 @@
-package io.github.xiaohong2019.util.vo;
+package io.github.darryring.util.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -9,7 +9,7 @@ import lombok.Data;
  *
  * </p>
  *
- * @author xiaohong
+ * @author darryring
  * @since 2020-09-15 20:04
  */
 @Data

@@ -1,11 +1,11 @@
-package io.github.xiaohong2019.util.param;
+package io.github.darryring.util.param;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * @author xiaohong
+ * @author darryring
  */
 @Data
 @ApiModel(value = "PageQueryParam", description = "分页查询入参")

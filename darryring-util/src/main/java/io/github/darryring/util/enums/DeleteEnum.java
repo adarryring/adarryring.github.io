@@ -1,9 +1,9 @@
-package io.github.xiaohong2019.util.enums;
+package io.github.darryring.util.enums;
 
 import lombok.Getter;
 
 /**
- * @author xiaohong
+ * @author darryring
  */
 @Getter
 public enum DeleteEnum {

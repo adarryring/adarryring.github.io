@@ -1,8 +1,8 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
-import io.github.xiaohong2019.util.vo.LookupItemVO;
+import io.github.darryring.util.vo.LookupItemVO;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.util.Objects;
  *
  * </p>
  *
- * @author xiaohong
+ * @author darryring
  * @since 2020-09-16 15:19
  */
 public class DictUtil {

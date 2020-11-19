@@ -1,4 +1,4 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -13,7 +13,7 @@ import java.util.function.Predicate;
  *
  * </p>
  *
- * @author xiaohong
+ * @author darryring
  * @since 2020-08-19 17:48
  */
 public class CheckUtil {

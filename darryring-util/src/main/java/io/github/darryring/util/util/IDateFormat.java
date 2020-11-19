@@ -1,11 +1,11 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 /**
  * <p>
  *
  * </p>
  *
- * @author xiaohong
+ * @author darryring
  * @since 2020-09-16 14:36
  */
 public interface IDateFormat {

@@ -1,4 +1,4 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 import org.apache.http.HttpStatus;
 

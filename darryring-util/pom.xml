@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.xiaohong2019</groupId>
-        <artifactId>x-professional</artifactId>
+        <groupId>io.github.adarryring</groupId>
+        <artifactId>darryring</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>x-util</artifactId>
+    <artifactId>darryring-util</artifactId>
     <version>1.0.0</version>
 
     <dependencies>

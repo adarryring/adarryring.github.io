@@ -1,4 +1,4 @@
-package io.github.xiaohong2019.util.util;
+package io.github.darryring.util.util;
 
 import com.google.common.collect.Lists;
 import lombok.Data;
@@ -15,7 +15,7 @@ import java.util.*;
  *
  * </p>
  *
- * @author xiaohong
+ * @author darryring
  * @since 2020-09-16 09:41
  */
 public class BeanUtil {
