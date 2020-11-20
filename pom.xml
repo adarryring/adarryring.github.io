@@ -10,6 +10,7 @@
         <version>2.1.6.RELEASE</version>
     </parent>
 
+    <name>darryring</name>
     <groupId>io.github.adarryring</groupId>
     <artifactId>darryring</artifactId>
     <version>1.0.0</version>

@@ -10,6 +10,7 @@
         <version>1.0.0</version>
     </parent>
 
+    <name>darryring-util</name>
     <artifactId>darryring-util</artifactId>
     <version>1.0.0</version>
 
