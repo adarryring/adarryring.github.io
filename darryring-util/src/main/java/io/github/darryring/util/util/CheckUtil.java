@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 
 /**
  * <p>
- *
+ * 常用检查
  * </p>
  *
  * @author darryring

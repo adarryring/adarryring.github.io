@@ -2,7 +2,7 @@ package io.github.darryring.util.util;
 
 /**
  * <p>
- *
+ * 时间常量
  * </p>
  *
  * @author darryring

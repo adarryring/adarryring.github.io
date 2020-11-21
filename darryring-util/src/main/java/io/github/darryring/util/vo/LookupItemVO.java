@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
  * <p>
- *
+ * 字典实体类
  * </p>
  *
  * @author darryring

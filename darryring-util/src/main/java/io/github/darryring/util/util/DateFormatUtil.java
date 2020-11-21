@@ -4,6 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * @author darryring
+ */
 public class DateFormatUtil {
 
     public static String today(String pattern) {

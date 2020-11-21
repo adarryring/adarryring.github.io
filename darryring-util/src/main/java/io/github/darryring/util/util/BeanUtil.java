@@ -12,7 +12,7 @@ import java.util.*;
 
 /**
  * <p>
- *
+ * 操作实体类
  * </p>
  *
  * @author darryring

@@ -1,6 +1,12 @@
 package io.github.darryring.util.util;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -42,7 +48,8 @@ public class IOStreamUtil {
     /**
      * 字符串写入流
      *
-     * @param s 字符串
+     * @param outputStream 写入流
+     * @param s            字符串
      */
     public static void writeWithBuffer(OutputStream outputStream, String s) {
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
@@ -60,11 +67,24 @@ public class IOStreamUtil {
     /**
      * 字符串写入流
      *
-     * @param s 字符串
+     * @param outputStream 写入流
+     * @param s            字符串
      */
     public static void write(OutputStream outputStream, String s) {
         try {
             outputStream.write(s.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void code(String path) {
+        // 解析 Unicode 编码
+        try {
+            List<String> lines = Files.readAllLines(Paths.get(path), StandardCharsets.UTF_8);
+            JSONObject jsonObject = JSON.parseObject(String.join("\n", lines));
+            System.out.println(jsonObject.toJSONString());
+            write(new FileOutputStream(path), jsonObject.toJSONString());
         } catch (IOException e) {
             e.printStackTrace();
         }

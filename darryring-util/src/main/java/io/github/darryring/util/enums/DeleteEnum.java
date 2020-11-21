@@ -7,8 +7,13 @@ import lombok.Getter;
  */
 @Getter
 public enum DeleteEnum {
-
+    /**
+     * 未删除
+     */
     NOT_DEL(0),
+    /**
+     * 已删除
+     */
     DELETED(1);
 
     private Integer status;
