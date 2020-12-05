@@ -1,7 +1,7 @@
 package io.github.darryring.util.util;
 
-import com.x.java.exception.RestException;
-import com.x.java.http.HttpStatusEnum;
+import io.github.darryring.util.exception.RestException;
+import io.github.darryring.util.http.HttpStatusEnum;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 

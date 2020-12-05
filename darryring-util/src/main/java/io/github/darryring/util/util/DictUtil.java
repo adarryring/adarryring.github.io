@@ -2,7 +2,7 @@ package io.github.darryring.util.util;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
-import com.x.java.vo.LookupItemVO;
+import io.github.darryring.util.vo.LookupItemVO;
 import io.swagger.annotations.ApiModelProperty;
 
 import java.io.IOException;
