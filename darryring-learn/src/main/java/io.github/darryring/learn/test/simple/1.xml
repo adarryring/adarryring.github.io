@@ -1,0 +1,40 @@
+<servers>
+    <server>   
+        <id>test_repo</id>
+           <username>admin</username>    
+        <password>admin123</password>
+              
+    </server>
+</servers>
+<mirrors>          
+ 
+</mirrors>
+<profiles>         
+<profile>        
+     <id>test_repo</id>      
+    <activation>
+        <activeByDefault>true</activeByDefault>
+         
+    </activation>
+           
+    <repositories>            
+        <repository>        
+                 <id>test_repo</id>         
+                 <url>http://localhost:8081/repository/test_repo/</url>               
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+                          
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+                        
+        </repository>
+                
+    </repositories>
+               
+</profile>
+      
+</profiles>
+<activeProfiles>          <activeProfile>test_repo</activeProfile>       
+</activeProfiles>

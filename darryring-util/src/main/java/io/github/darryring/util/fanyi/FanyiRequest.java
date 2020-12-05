@@ -3,8 +3,8 @@ package io.github.darryring.util.fanyi;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import io.github.darryring.util.api.TransApi;
-import io.github.darryring.util.util.FileUtil;
-import io.github.darryring.util.util.IOStreamUtil;
+import io.github.darryring.util.io.FileUtil;
+import io.github.darryring.util.io.IOStreamUtil;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

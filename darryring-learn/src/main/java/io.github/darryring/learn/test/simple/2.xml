@@ -1,0 +1,18 @@
+<mapper namespace="com.xg.usercenter.dao.ServicesDao">
+    <select id="openList" parameterType="java.lang.String" resultType="java.util.HashMap">
+        select url, `name`, remark from sys_services where id in (
+        select service_id from sys_user_services where enterprise_id=#{enterpriseId} and user_id=#{userId}
+        )
+    </select>
+
+    <update id="updateValueByKey" parameterType="map">
+        update sys_config set `value` = #{value} where `key` = #{key}
+    </update>
+
+    <delete id="deleteBatch">
+        delete from sys_user_role where role_id in
+        <foreach item="roleId" collection="array" open="(" separator="," close=")">
+            #{roleId}
+        </foreach>
+    </delete>
+</mapper>

@@ -17,7 +17,7 @@ public enum SqlEnum {
     tinyint("    %s tinyint(4) COMMENT '%s',"),
     int_("    %s int(11) COMMENT '%s',"),
     text("    %s text COMMENT '%s',"),
-    decimal("    %s DECIMAL(10, 7) COMMENT '%s',"),
+    decimal("    %s DECIMAL(17, 7) COMMENT '%s',"),
     string("    %s varchar(255) default null COMMENT '%s',"),
     datetime("    %s datetime default null COMMENT '%s',");
 
@@ -38,7 +38,6 @@ public enum SqlEnum {
     }
 
     public static String quote(String src) {
-
         int i = src.indexOf("（");
         int j = src.indexOf("(");
         if (-1 == i || i > j) i = j;

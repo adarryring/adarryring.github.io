@@ -8,6 +8,9 @@ cls & D:\Deposit\000\0-Code\apache-maven-3.5.0\bin\mvn clean deploy -Dmaven.test
 
 # install
 cls & D:\Deposit\000\0-Code\apache-maven-3.5.0\bin\mvn clean install -Dmaven.test.skip=true -P release
+
+# 导出 pom 树
+mvn dependency:tree> 1.txt
 ```
 
 ## explorer

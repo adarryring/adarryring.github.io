@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import io.github.darryring.util.enums.SqlEnum;
 
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Map;
 
 import static io.github.darryring.util.enums.SqlEnum.tinyint;
@@ -18,8 +19,8 @@ import static io.github.darryring.util.enums.SqlEnum.tinyint;
  */
 public class FanyiConvert {
 
-    public static JSONObject key(JSONObject jsonObject, Map<String, String> replaceFanyi, Map<String, String> replaceEnglish, Map<String, String> yesOrNo) {
-        if (null == jsonObject) return null;
+    public static void key(JSONObject jsonObject, Map<String, String> replaceFanyi, Map<String, String> replaceEnglish, List<String> yesOrNo) {
+        if (null == jsonObject) return;
         jsonObject.getJSONArray("trans_result").forEach(e -> {
             JSONObject ee = (JSONObject) e;
 
@@ -39,6 +40,7 @@ public class FanyiConvert {
 
             String s = ee.getString("dst");
             s = s.toLowerCase();
+            s = s.replace(" ", "_");
 
             // 去掉括号注释
             s = SqlEnum.quote(s);
@@ -55,16 +57,9 @@ public class FanyiConvert {
             if (s.startsWith("name_of_")) s = s.substring("name_of_".length()) + "_name";
 
             // 是否
-            if (!s.startsWith("do_"))
-                for (String k : yesOrNo.keySet()) {
-                    if (ee.getString("src").contains(k)) {
-                        s = "do_" + s;
-                        break;
-                    }
-                }
+            if (!s.startsWith("do_") && yesOrNo.contains(s)) s = "do_" + s;
             ee.put("dst", s);
         });
-        return jsonObject;
     }
 
     public static String sql(JSONObject jsonObject, String[] arrText, String[] arrInt, String[] arrDecimal, String[] arrDatetime) {
